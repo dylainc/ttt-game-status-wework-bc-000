@@ -34,7 +34,7 @@ end
 
 def full?(board)
   board.detect do |element|
-
+    return
   end
 end
 
