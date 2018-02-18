@@ -35,11 +35,9 @@ end
 def full?(board)
   board.detect do |element|
     if element != " " || element != ""
-      true #board is not full as empty spaces exist
-      #puts "false"
+      true
     else
-      false #board is full as empty spaces do not exist
-      #puts "true"
+      false
     end
   end
 end
