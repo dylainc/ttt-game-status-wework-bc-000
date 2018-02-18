@@ -66,12 +66,12 @@ def draw?(board)
   if full?(board) == true && won?(board) == false
     #puts "now testing won?=false"
 
-      false
+      true
       #puts "true section"
 
     #puts "draw? section, full=true, won=false"
   else
-    true
+    false
     #puts "false section"
   end
 #returns true if the board has not been won and is full
