@@ -45,10 +45,10 @@ def won?(board)
           false
         end
 
-        puts "last win combo test"
+        #puts "last win combo test"
       end
 
-      puts "false section- win?"
+      #puts "false section- win?"
     end
   end
 end
@@ -65,16 +65,16 @@ def full?(board)
 end
 
 def draw?(board)
-  puts full?(board)
-  puts won?(board)
+  #puts full?(board)
+  #puts won?(board)
   if full?(board) == true
-    puts "now testing won?=false"
+    #puts "now testing won?=false"
     if won?(board) == false
-      puts "true section"
+      #puts "true section"
     end
-    puts "draw? section, full=true, won=false"
+    #puts "draw? section, full=true, won=false"
   else
-    puts "false section"
+    #puts "false section"
   end
 #returns true if the board has not been won and is full
 #false if the board is not won and the board is not full
