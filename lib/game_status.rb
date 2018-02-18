@@ -92,7 +92,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   puts "test"
   if won?(board).is_a?(Array) == true
     puts won?(board)
