@@ -32,7 +32,7 @@ def won?(board)
 end
 
 
-def full?
+def full?(board)
   board.detect do |element|
     if element != " " || element != ""
       false
