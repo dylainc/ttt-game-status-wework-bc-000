@@ -32,6 +32,13 @@ def won?(board)
   else
     true
   end
+
+  #draw situation
+  if full?(board) == true
+    true
+  else
+    false
+  end
 end
 
 
