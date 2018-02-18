@@ -83,9 +83,11 @@ end
 def over?(board)
   if won?(board) == true || draw?(board) == true || full?(board) == true
     true
+  elsif full?(board) == false && won?(board).is_a?(Array) == true
+    #puts board
+    #puts won?(board)
+    true
   else
-    puts board
-    puts won?(board)
     false
   end
 end
