@@ -39,7 +39,7 @@ def won?(board)
     false #empty board
   end
 
-  
+
 end
 
 #check for a draw
