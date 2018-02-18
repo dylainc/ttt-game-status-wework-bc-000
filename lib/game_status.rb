@@ -91,3 +91,11 @@ def over?(board)
     false
   end
 end
+
+def winner?(board)
+  if board[won?(board)[1]] == "X"
+    "X"
+  else
+    "O"
+  end
+end
