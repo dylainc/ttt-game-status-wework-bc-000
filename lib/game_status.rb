@@ -25,11 +25,11 @@ def won?(board)
 
         #false for empty board
         if board.detect{|i| i == "X"}
-
+          
         elsif board.detect{|i| i == "O"}
 
         else
-          false
+          false #empty board
         end
 
         #puts "last win combo test"
