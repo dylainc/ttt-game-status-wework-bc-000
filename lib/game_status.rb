@@ -93,9 +93,14 @@ def over?(board)
 end
 
 def winner?(board)
-  if board[won?(board)[1]] == "X"
-    "X"
+  if won?(board).is_a?(Array) == true
+    if board[won?(board)[1]] == "X"
+      "X"
+    else
+      "O"
+    end
   else
-    "O"
+    nil
   end
+
 end
