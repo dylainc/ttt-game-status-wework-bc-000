@@ -79,3 +79,9 @@ def draw?(board)
 #false if the board is won.
 
 end
+
+def over?(board)
+  if won?(board) == true || draw?(board) == true || full?(board) == true
+    true
+  end
+end
