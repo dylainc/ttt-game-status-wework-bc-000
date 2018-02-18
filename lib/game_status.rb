@@ -20,6 +20,7 @@ def won?(board)
       return win_combination # return the win_combination indexes that won.
     else
       false
+      puts "false section- win?"
     end
   end
 
@@ -27,6 +28,8 @@ def won?(board)
   board.detect do |element|
     if element != "X" || element != "O"
       nil
+    else
+      puts "false section- win?, empty board sitch"
     end
   end
 end
@@ -49,6 +52,7 @@ def draw?(board)
     if won?(board) == false
       puts "true section"
     end
+    puts "draw? section, full=true, won=false"
   else
     puts "false section"
   end
