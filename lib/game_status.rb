@@ -50,6 +50,6 @@ def draw?(board)
   end
 #returns true if the board has not been won and is full
 #false if the board is not won and the board is not full
-#false if the board is won. 
+#false if the board is won.
 
 end
