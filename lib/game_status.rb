@@ -37,7 +37,7 @@ def won?(board)
         else
           false
         end
-        
+
         puts "last win combo test"
       end
       puts "false section- win?"
