@@ -24,15 +24,14 @@ def won?(board)
     end
   end
 
-#false for empty board
-  board.detect do |element|
-    if board.detect{|i| i == " "}
-      false
-    elsif board.detect{|i| i == ""}
-      false
-    else
-      true
-    end
+  #false for empty board
+  if board.detect{|i| i == " "}
+    false
+  elsif board.detect{|i| i == ""}
+    false
+  else
+    true
+  end
 end
 
 
