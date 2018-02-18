@@ -25,12 +25,12 @@ def won?(board)
   end
 
   #false for empty board
-  if board.detect{|i| i == " "}
-    false
-  elsif board.detect{|i| i == ""}
-    false
-  else
+  if board.detect{|i| i == "X"}
     true
+  elsif board.detect{|i| i == "O"}
+    true
+  else
+    false
   end
 
   #draw situation
