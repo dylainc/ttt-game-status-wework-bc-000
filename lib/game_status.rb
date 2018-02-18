@@ -33,7 +33,7 @@ end
 
 
 def full?(board)
-  board.detect { |element| element != " " && element != "" }
+  board.detect { |element| element != " "}
 end
 
 def draw?(board)
