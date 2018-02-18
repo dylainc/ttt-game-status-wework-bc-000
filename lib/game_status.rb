@@ -33,9 +33,11 @@ end
 
 
 def full?(board)
-  board.detect { |element| element != " "}
-  raise object.inspect
-
+  board.detect do |element|
+    if element != " " || element != ""
+      nil
+    end
+  end
 end
 
 def draw?(board)
