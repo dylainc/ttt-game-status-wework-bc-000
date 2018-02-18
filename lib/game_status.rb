@@ -31,7 +31,7 @@ def won?(board)
           else
             false
           end
-          
+
         elsif board.detect{|i| i == "O"}
 
           #check for a draw
@@ -40,7 +40,7 @@ def won?(board)
           else
             false
           end
-          
+
         else
           false
         end
