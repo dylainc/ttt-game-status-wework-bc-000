@@ -29,8 +29,15 @@ def won?(board)
       nil
     end
   end
+end
 
 
-
-
+def full?
+  board.detect do |element|
+    if element != " " || element != ""
+      false
+    else
+      true
+    end
+  end
 end
