@@ -65,10 +65,10 @@ def draw?(board)
   #puts won?(board)
   if full?(board) == true && won?(board) == false
     #puts "now testing won?=false"
-    
+
       true
       #puts "true section"
-    
+
     #puts "draw? section, full=true, won=false"
   else
     false
