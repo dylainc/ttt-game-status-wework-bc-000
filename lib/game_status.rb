@@ -35,13 +35,16 @@ end
 def full?(board)
   board.detect do |element|
     if element != " " || element != ""
-      nil
+      false
+    else
+      true
     end
   end
+    
 end
 
 def draw?(board)
-  if full?(board) != nil && won?(board) == false
+  if full?(board) == true && won?(board) == false
     true
   else
     false
