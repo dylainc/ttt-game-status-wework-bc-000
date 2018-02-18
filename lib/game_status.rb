@@ -34,6 +34,7 @@ end
 
 def full?(board)
   board.detect { |element| element != " "}
+  puts return
 end
 
 def draw?(board)
