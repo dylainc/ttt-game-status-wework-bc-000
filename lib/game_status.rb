@@ -26,12 +26,13 @@ def won?(board)
 
 #false for empty board
   board.detect do |element|
-    if element != "X" || element != "O"
-      nil
+    if board.detect{|i| i == " "}
+      false
+    elsif board.detect{|i| i == ""}
+      false
     else
-      puts "false section- win?, empty board sitch"
+      true
     end
-  end
 end
 
 
