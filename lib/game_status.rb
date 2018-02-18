@@ -19,7 +19,10 @@ def won?(board)
     if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
       return win_combination # return the win_combination indexes that won.
     else
-      did_win? = false #false
+      if win_combination == [2,4,6]
+        did_win? = false #false
+        puts "last win combo test"
+      end
       puts "false section- win?"
     end
   end
@@ -34,7 +37,7 @@ def won?(board)
   end
 
   #draw situation
-  if full?(board) == true
+  if full?(board) == true && did_win? == false
     true
   else
     false
