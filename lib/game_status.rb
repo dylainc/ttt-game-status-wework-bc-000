@@ -22,28 +22,28 @@ def won?(board)
       return win_combination # return the win_combination indexes that won.
     else
       if win_combination == [2,4,6]
-        did_win = false #false
+
+        #false for empty board
+        if board.detect{|i| i == "X"}
+          true
+        elsif board.detect{|i| i == "O"}
+          true
+        else
+          false
+        end
+
+        if full?(board) == true
+          true
+        else
+          false
+        end
+        
         puts "last win combo test"
       end
       puts "false section- win?"
     end
   end
 
-  #false for empty board
-  if board.detect{|i| i == "X"}
-    true
-  elsif board.detect{|i| i == "O"}
-    true
-  else
-    false
-  end
-
-  #draw situation
-  if full?(board) == true && did_win == false
-    true
-  else
-    false
-  end
 end
 
 
