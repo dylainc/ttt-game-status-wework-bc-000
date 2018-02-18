@@ -34,7 +34,7 @@ end
 
 def full?(board)
   board.detect do |element|
-    if element != " "
+    if element != nil
       false
     else
       true
