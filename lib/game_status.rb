@@ -94,6 +94,8 @@ end
 
 def winner?(board)
   if won?(board).is_a?(Array) == true
+    puts won?(board)
+    puts won?(board)[0]
     if board[won?(board)[0]] == "X"
       "X"
     else
