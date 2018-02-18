@@ -44,6 +44,15 @@ def won?(board)
     end
   end
 
+  #false for empty board
+  if board.detect{|i| i == "X"}
+    true
+  elsif board.detect{|i| i == "O"}
+    true
+  else
+    false
+  end
+
 end
 
 
