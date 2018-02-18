@@ -94,7 +94,7 @@ end
 
 def winner?(board)
   if won?(board).is_a?(Array) == true
-    if board[won?(board)[1]] == "X"
+    if board[won?(board)[1]-1] == "X"
       "X"
     else
       "O"
